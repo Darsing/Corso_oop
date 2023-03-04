@@ -1,0 +1,14 @@
+C:\xampp\htdocs\programme_oop\Corso_oop\bin\Debug\netcoreapp3.1\Corso_oop.exe
+C:\xampp\htdocs\programme_oop\Corso_oop\bin\Debug\netcoreapp3.1\Corso_oop.deps.json
+C:\xampp\htdocs\programme_oop\Corso_oop\bin\Debug\netcoreapp3.1\Corso_oop.runtimeconfig.json
+C:\xampp\htdocs\programme_oop\Corso_oop\bin\Debug\netcoreapp3.1\Corso_oop.runtimeconfig.dev.json
+C:\xampp\htdocs\programme_oop\Corso_oop\bin\Debug\netcoreapp3.1\Corso_oop.dll
+C:\xampp\htdocs\programme_oop\Corso_oop\bin\Debug\netcoreapp3.1\Corso_oop.pdb
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.csproj.AssemblyReference.cache
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.AssemblyInfoInputs.cache
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.AssemblyInfo.cs
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.dll
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.pdb
+C:\xampp\htdocs\programme_oop\Corso_oop\obj\Debug\netcoreapp3.1\Corso_oop.genruntimeconfig.cache
