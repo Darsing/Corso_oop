@@ -7,9 +7,10 @@ namespace Corso_oop
     //classe
     class Personne
     {
-        
+        //variable de la classe : nombreDePersonnes,AfficherNombreDePersonnes()
         static int nombreDePersonnes = 0;
 
+        //variables d instance:  Personne ,Afficher()
         public string nom;
         int age;
         string emploi;
@@ -39,8 +40,11 @@ namespace Corso_oop
         public static void AfficherNombreDePersonnes()
         {
             //dans une fonction static ont peut acceder a la variable statique
-            Console.WriteLine("nombre total de personne : " + Personne.nombreDePersonnes);
+            //ont ne peut pas acceder a une variable d instance dans
+            //une fonction statique vu qu on ne sait pas de quel personne ont parle..
+            Console.WriteLine("nombre total de personne : " + nombreDePersonnes);
             
+
         }
     }
     internal class Program
