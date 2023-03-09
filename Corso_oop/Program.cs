@@ -4,87 +4,50 @@ using System.Linq;
 
 namespace Corso_oop
 {
-    //classe
+    //classe Etudiant qui herite de la classe Personne
+   class Etudiant : Personne
+    {
+        string infoEtudes;
+        Personne professeurPrincipal;
+        public Etudiant(string nom, int age, string infoEtudes, Personne professeurPrincipal=null) : base(nom, age)
+        {
+            this.infoEtudes = infoEtudes;
+            this.professeurPrincipal = professeurPrincipal;
+        }
+        public override void Afficher()
+        {
+            AfficherNomAge();
+            Console.WriteLine(" Etudiant en " + infoEtudes);
+            Console.WriteLine(" Le professeur principal est : ");
+            professeurPrincipal.Afficher();
+        }
+    }
+
     class Personne
     { 
         static int nombreDePersonnes = 0;
-        /* pour classer les nom par ordre alphabetique nous avons ecrit devant
-         string nom le mot cle 'public' mais avec ce mot cle il est possible de modifier 
-        notre variable à l esterieure de la classe Personne chose qui n est pas tres bien 
-        en programmation. comme solution nous avons des fonctions(accesseurs) qui vont nous 
-        permettre de lire et acceder à la variable et comme autre solution nous avons 
-        des Proprietes(get,set) il est egalement possible de mettre private devant set 
-        pour indiquer la variable ne pourra d etre modifier à l esterieure de la classe*/
-        public string nom { get; set; } //je peux lire et je peux ecrire avec get et set
-        public int age { get; set; }
-        public string emploi { get; set; }
+
+        protected string nom;
+        protected int age;
+        protected string emploi;
 
         int numeroPersonne;
 
-        //accesseurs
-        //avec la get on ne peut pas modifier le nom
-        //avec la set on peut modifier le nom
-        //public string GetNom()
-        //{
-        //    return nom;
-        //}
-
-        //public void SetNom(string value)
-        //{
-        //    nom = value;
-        //}
-
-
-        //costructore 2:
-        //pour gerer le cas d un parametre non specifier
-        //j ecris mon contructore de cette façon 
-
-        //public Personne(string nom, int age) : this(nom, age, ("non specifié"))
-        //{
-
-        //}
-
-        //constructore 1
-        /*nons pouvons egalement gerer emploi avec sa valeur de default null
-         * où bien creer un second constructor 
-         * dans ma function afficher je geres une condiction
-         */
-
-        //public Personne(string nom, int age, string emploi=null)
-      
-        //{
-        //    this.nom = nom;
-        //    this.age = age;
-        //    this.emploi = emploi;
-
-        //    nombreDePersonnes++;
-        //    this.numeroPersonne = nombreDePersonnes;
-
-        //}
-
-        //je veux creer un constructor sans parametre et avec le this() je le passe
-        //à l autre constructor qui a des parametres
-        public Personne()
-
-        {
-            nombreDePersonnes++;
-            this.numeroPersonne = nombreDePersonnes;
-        }
-        public Personne(string nom, int age, string emploi = null) :this()
+        public Personne(string nom, int age, string emploi = null) 
 
         {
             this.nom = nom;
             this.age = age;
             this.emploi = emploi;
+
+            nombreDePersonnes++;
+            this.numeroPersonne = nombreDePersonnes;
         }
 
         //fonction
-        public void Afficher()
+        public virtual void Afficher()
         {
-            Console.WriteLine("Personne N°" + numeroPersonne);
-            Console.WriteLine("Nom: " + nom);
-            Console.WriteLine("Age: " + age + " ans");
-
+            AfficherNomAge();
             if (emploi == null)
             {
                 Console.WriteLine(" Aucun emploi specifie");
@@ -96,6 +59,15 @@ namespace Corso_oop
            
         }
 
+
+        protected void AfficherNomAge()
+        {
+            Console.WriteLine("Personne N°" + numeroPersonne);
+            Console.WriteLine("Nom: " + nom);
+            Console.WriteLine("Age: " + age + " ans");
+
+
+        }
         public static void AfficherNombreDePersonnes()
         {
             Console.WriteLine("nombre total de personne : " + nombreDePersonnes);    
@@ -125,25 +97,19 @@ namespace Corso_oop
 
             // Personne.AfficherNombreDePersonnes();
 
-            //Personne personne1 = new Personne("Paul", 23);
-            //Console.WriteLine("Nom de la personne1 " + personne1.GetNom()); //accesseur GetNom
-            // personne1.SetNom("toto");  // accesseur SetNom
 
-            //personne1.nom = "Toto"; //en utilisant les proprietes set je modifie le nom
+            //Personne personne1 = new Personne() { nom= "Paul",age= 35,emploi="ingenieur"};
+            //Personne personne2 = new Personne("Luca", 23, "etudiant");
 
-            //Personne personne1 = new Personne();  // constructeur sans parametre
-            //Personne personne2 = new Personne("Paul", 23); //constructeur avec les parametres
-            //personne1.Afficher();
-            //personne2.Afficher();
-            
-            //j ai passe des proprietes à mon constructeur qui n a pas de parametre
+            //je ne peux pas heriter des constructeur de la classe parent
+            // je ne peux donc pas ecrire :var etudiant = new Etudiant("paul",30,"proffeseur")
+            //mais je peux ecicre comme ceux-ci parcequ il le gere come etant le constructor
+            //de defaux de la classe etudiant
+            //var etudiant = new Etudiant() { nom= "paul", age=30, emploi="proffeseur" };
 
-            Personne personne1 = new Personne() { nom= "Paul",age= 35,emploi="ingenieur"};
-            Personne personne2 = new Personne("Luca", 23, "etudiant");
-
-
-            personne1.Afficher();
-            personne2.Afficher();
+            Personne professeur = new Personne("Jacque", 35,"professeur");
+            Etudiant etudiant1 = new Etudiant("Luca", 23," meccanique", professeur);
+            etudiant1.Afficher();
             
         }
     }
