@@ -137,38 +137,32 @@ namespace Corso_oop
             //pour selectionner des personnes qui ont plus de 30ans
             //personnes = personnes.Where(p => p.age >= 30).ToList();
             //savoir si p est un etudiant
-            personnes = personnes.Where(p => p is Etudiant).ToList();
+            //personnes = personnes.Where(p => p is Etudiant).ToList();
+            //personnes = personnes.Where(p => p.nom[0] == 'J').ToList();
+            //personnes = personnes.Where(p => (p.nom[0] == 'J')&& p.age>=30).ToList();
             foreach (Personne person in personnes)
             {
                 person.Afficher();
             }
-            //Personne personne1 = new Personne() { nom= "Paul",age= 35,emploi="ingenieur"};
-            //Personne personne2 = new Personne("Luca", 23, "etudiant");
 
-            //je ne peux pas heriter des constructeur de la classe parent
-            // je ne peux donc pas ecrire :var etudiant = new Etudiant("paul",30,"proffeseur")
-            //mais je peux ecicre comme ceux-ci parcequ il le gere come etant le constructor
-            //de defaux de la classe etudiant
-            //var etudiant = new Etudiant() { nom= "paul", age=30, emploi="proffeseur" };
+            Etudiant etudiant = new Etudiant("Luca", 23, " meccanique");
+            //etudiant.professeurPrincipal = new Personne("Jacque", 35,"professeur");
+            var professeurPrincipal = new Personne("Jacque", 35, "professeur");
 
-            // Etudiant etudiant = new Etudiant("Luca", 23, " meccanique");
-            // //etudiant.professeurPrincipal = new Personne("Jacque", 35,"professeur");
-            // var professeurPrincipal = new Personne("Jacque", 35, "professeur");
+            etudiant.professeurPrincipal = professeurPrincipal;
+            etudiant.Afficher();
 
-            // etudiant.professeurPrincipal=professeurPrincipal;   
-            // etudiant.Afficher();
+            Enfant enfant = new Enfant("Sophie", 8, "cp", new Dictionary<string, float>
+             {
+                 {"math",8f},{ "dicte", 4f },{"geo" ,6.6f}
+             });
 
-            // Enfant enfant = new Enfant("Sophie", 8, "cp", new Dictionary<string, float>
-            // {
-            //     {"math",8f},{ "dicte", 4f },{"geo" ,6.6f}
-            // });
+            //var enfant1 = new Enfant("kiki", 7,"cp", null); //cas de dictionnaire null 
+            // var enfant1 = new Enfant("kiki", 7, "cp", new Dictionary<string, float>());//cas un le dictinnaire ne contient pas d element
+            //enfant1.Afficher();
 
-            // //var enfant1 = new Enfant("kiki", 7,"cp", null); //cas de dictionnaire null 
-            //// var enfant1 = new Enfant("kiki", 7, "cp", new Dictionary<string, float>());//cas un le dictinnaire ne contient pas d element
-            // //enfant1.Afficher();
-
-            // enfant.professeurPrincipal=professeurPrincipal;
-            // enfant.Afficher();
+            enfant.professeurPrincipal = professeurPrincipal;
+            enfant.Afficher();
 
         }
     }
