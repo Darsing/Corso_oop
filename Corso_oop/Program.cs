@@ -8,18 +8,22 @@ namespace Corso_oop
    class Etudiant : Personne
     {
         string infoEtudes;
-        Personne professeurPrincipal;
-        public Etudiant(string nom, int age, string infoEtudes, Personne professeurPrincipal=null) : base(nom, age)
+        public Personne professeurPrincipal;
+        public Etudiant(string nom, int age, string infoEtudes) : base(nom, age)
         {
             this.infoEtudes = infoEtudes;
-            this.professeurPrincipal = professeurPrincipal;
+            
         }
         public override void Afficher()
         {
             AfficherNomAge();
             Console.WriteLine(" Etudiant en " + infoEtudes);
-            Console.WriteLine(" Le professeur principal est : ");
-            professeurPrincipal.Afficher();
+            if (professeurPrincipal != null)
+            {
+                Console.WriteLine(" Le professeur principal est : ");
+                professeurPrincipal.Afficher();
+            }
+            
         }
     }
 
@@ -107,9 +111,10 @@ namespace Corso_oop
             //de defaux de la classe etudiant
             //var etudiant = new Etudiant() { nom= "paul", age=30, emploi="proffeseur" };
 
-            Personne professeur = new Personne("Jacque", 35,"professeur");
-            Etudiant etudiant1 = new Etudiant("Luca", 23," meccanique", professeur);
-            etudiant1.Afficher();
+            Etudiant etudiant = new Etudiant("Luca", 23, " meccanique");
+            etudiant.professeurPrincipal = new Personne("Jacque", 35,"professeur");
+            
+            etudiant.Afficher();
             
         }
     }
