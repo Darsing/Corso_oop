@@ -1,0 +1,14 @@
+C:\xampp\htdocs\programme_oop\projet_pizza1\bin\Debug\netcoreapp3.1\projet_pizza1.exe
+C:\xampp\htdocs\programme_oop\projet_pizza1\bin\Debug\netcoreapp3.1\projet_pizza1.deps.json
+C:\xampp\htdocs\programme_oop\projet_pizza1\bin\Debug\netcoreapp3.1\projet_pizza1.runtimeconfig.json
+C:\xampp\htdocs\programme_oop\projet_pizza1\bin\Debug\netcoreapp3.1\projet_pizza1.runtimeconfig.dev.json
+C:\xampp\htdocs\programme_oop\projet_pizza1\bin\Debug\netcoreapp3.1\projet_pizza1.dll
+C:\xampp\htdocs\programme_oop\projet_pizza1\bin\Debug\netcoreapp3.1\projet_pizza1.pdb
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.csproj.AssemblyReference.cache
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.AssemblyInfoInputs.cache
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.AssemblyInfo.cs
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.dll
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.pdb
+C:\xampp\htdocs\programme_oop\projet_pizza1\obj\Debug\netcoreapp3.1\projet_pizza1.genruntimeconfig.cache
