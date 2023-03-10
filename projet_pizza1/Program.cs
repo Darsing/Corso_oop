@@ -11,6 +11,8 @@ namespace projet_pizza1
         public PizzaPersonnalisee() : base("Personnalisee",5, false, null)
         {
             nbPizzasPersonnalisee++;
+            nom = "Personnalisee" + nbPizzasPersonnalisee;
+
             ingredients = new List<string>();
             while (true)
             {
@@ -33,8 +35,8 @@ namespace projet_pizza1
                 }
                 Console.WriteLine();
 
-
             }
+            prix = 5 + ingredients.Count * 1.5f;
             
         }
         
@@ -42,7 +44,7 @@ namespace projet_pizza1
     class Pizza
     {
         public string nom { get; set; }
-        public float prix { get;private set; }
+        public float prix { get;protected set; }
         public bool vegetarienne { get;private set; }
         public List<string> ingredients { get; protected set; }
 
