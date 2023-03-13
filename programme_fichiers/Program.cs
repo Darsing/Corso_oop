@@ -14,7 +14,7 @@ namespace programme_fichiers
                 "Jean",
                 "Paul",
                 "Maria",
-                "Oliva"
+                
             };
             //File.WriteAllText("monFichier.txt", "Voici le contenu que j ai dans mon fichier");
             //File.AppendAllText("monfichier.txt", " je rajoute ce text.");
