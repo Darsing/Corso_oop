@@ -1,0 +1,14 @@
+C:\xampp\htdocs\programme_oop\programme_reseau\bin\Debug\netcoreapp3.1\programme_reseau.exe
+C:\xampp\htdocs\programme_oop\programme_reseau\bin\Debug\netcoreapp3.1\programme_reseau.deps.json
+C:\xampp\htdocs\programme_oop\programme_reseau\bin\Debug\netcoreapp3.1\programme_reseau.runtimeconfig.json
+C:\xampp\htdocs\programme_oop\programme_reseau\bin\Debug\netcoreapp3.1\programme_reseau.runtimeconfig.dev.json
+C:\xampp\htdocs\programme_oop\programme_reseau\bin\Debug\netcoreapp3.1\programme_reseau.dll
+C:\xampp\htdocs\programme_oop\programme_reseau\bin\Debug\netcoreapp3.1\programme_reseau.pdb
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.csproj.AssemblyReference.cache
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.AssemblyInfoInputs.cache
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.AssemblyInfo.cs
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.dll
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.pdb
+C:\xampp\htdocs\programme_oop\programme_reseau\obj\Debug\netcoreapp3.1\programme_reseau.genruntimeconfig.cache
