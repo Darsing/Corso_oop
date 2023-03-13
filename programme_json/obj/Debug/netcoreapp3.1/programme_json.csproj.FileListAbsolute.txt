@@ -1,0 +1,16 @@
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\programme_json.exe
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\programme_json.deps.json
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\programme_json.runtimeconfig.json
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\programme_json.runtimeconfig.dev.json
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\programme_json.dll
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\programme_json.pdb
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.csproj.AssemblyReference.cache
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.AssemblyInfoInputs.cache
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.AssemblyInfo.cs
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.dll
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.pdb
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.genruntimeconfig.cache
+C:\xampp\htdocs\programme_oop\programme_json\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\xampp\htdocs\programme_oop\programme_json\obj\Debug\netcoreapp3.1\programme_json.csproj.CopyComplete

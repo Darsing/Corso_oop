@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yEsjsV0Z93kNfoT8lprgfGPSliv26+8mqCY6c1W+nUGVW8v+owBb+7Ufv0qWqcN0AWIJ9GNdtHZLMOsOCAyJ5Q==",
+  "dgSpecHash": "qDsR7QPtc9glnSm4qi4TrgPtKHtEXiYRuJ2jPFFDnCaMYcwx+ZpqgBv0fUMLHRBbWdDJaJqR0/FNylR+q6m8lQ==",
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\programme_oop\\programme_json\\programme_json.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\utente\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
