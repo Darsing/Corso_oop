@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace programme_fichiers
@@ -9,40 +8,91 @@ namespace programme_fichiers
         static void Main(string[] args)
         {
             string fileName = "monfichier.txt";
-            var  noms = new List<string>()
-            {
-                "Jean",
-                "Paul",
-                "Maria",
-                
-            };
-            //File.WriteAllText("monFichier.txt", "Voici le contenu que j ai dans mon fichier");
-            //File.AppendAllText("monfichier.txt", " je rajoute ce text.");
-            File.WriteAllLines(fileName,noms );//je crée mon fichier et son contenu
-            try
-            {
-                //string r = File.ReadAllText("monFichier.txt");
-                var ligne = File.ReadAllLines(fileName);//je lis mon fichier
-                //Console.WriteLine(ligne);
-                //ici le resultat de ligne est dans 3 string parceque on a lu les 3 lignes
-                //dans une seule string var ligne = File.ReadAllLines(fileName)
-                //on boucle pour recupere les 3 string dans une liste
+            var path = "out";
+            string pathAndFile = Path.Combine(path, fileName);
 
-                foreach (var line in ligne)
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            if (File.Exists(pathAndFile))
+            {
+                Console.WriteLine("le fichier existe deja on va ecrasser son contenu");
+            }
+            else
+            {
+                Console.WriteLine("le fichier n existe pas on va le creer");
+            }
+            Console.WriteLine("FICHIER : " + pathAndFile);
+
+            //var texte = "";
+            //nt nbLigne = 2000;
+
+            //mutable
+            //Stringbulder ça marche par block,il va loué un block de memoire
+            //SA LIMITE: il n a pas tout les fonctionalites d une chaine de caratectere
+            //StringBuilder texte= new StringBuilder();
+            //int nbLigne = 50000;
+
+            //-------------------------------------
+            //DateTime t1= DateTime.Now;
+
+            //Console.WriteLine("preparation des donnees");
+
+            //for (int i = 1; i <= nbLigne; i++)
+            //{
+            //    texte = "ligne " + i+ "\n";
+            //    // immutable :les donnees ne sont pas changeable ,il a loué la memoire de nouveau
+
+            //    //avec le StringBuilder()
+            //    //texte.Append("ligne " + i + "\n");
+            //}
+            //Console.WriteLine("ok..");
+
+            //Console.WriteLine("ecriture des donnees");
+            //File.WriteAllText(pathAndFile, texte);
+            ////File.WriteAllText(pathAndFile, texte.ToString());
+            //Console.WriteLine("ok");
+            //DateTime t2 = DateTime.Now;
+            //var diff = (int)((t2 - t1).Milliseconds);
+            //Console.WriteLine("Duree (ms) " + diff);
+
+            ////----------------------------------
+
+            //comment gerer les fichiers de plus 1 giga de memoire
+            //Stream:flux
+            DateTime t1 = DateTime.Now;
+            //using (var writeStream = File.CreateText(pathAndFile))
+            //{
+            //    for (int i = 1; i <= nbLigne; i++)
+            //    {
+            //        writeStream.WriteLine("ligne " + i);
+            //        //j ecris directement dans mon fichier et non dans la memoire
+            //    }
+            //}
+
+            using (var readStream = File.OpenText(pathAndFile))
+            {
+                while (true)
                 {
-                    Console.WriteLine(line);
+                    var line = readStream.ReadLine();
+                    if (line == null)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine(line);
+                    }
                 }
+                DateTime t2 = DateTime.Now;
+                var diff = (int)((t2 - t1).Milliseconds);
+                Console.WriteLine("Duree (ms) " + diff);
+            }
 
-            }
-            catch (FileNotFoundException ex)
-            {
-                Console.WriteLine("ERREUR : ce fichier n existe pas" + ex.Message);
-            }
-            catch
-            {
-                Console.WriteLine("Une erreur inconnue est arrivée");
-            }
-             
+
+
         }
     }
 }
