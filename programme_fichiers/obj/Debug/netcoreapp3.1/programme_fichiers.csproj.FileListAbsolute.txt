@@ -1,0 +1,14 @@
+C:\xampp\htdocs\programme_oop\programme_fichiers\bin\Debug\netcoreapp3.1\programme_fichiers.exe
+C:\xampp\htdocs\programme_oop\programme_fichiers\bin\Debug\netcoreapp3.1\programme_fichiers.deps.json
+C:\xampp\htdocs\programme_oop\programme_fichiers\bin\Debug\netcoreapp3.1\programme_fichiers.runtimeconfig.json
+C:\xampp\htdocs\programme_oop\programme_fichiers\bin\Debug\netcoreapp3.1\programme_fichiers.runtimeconfig.dev.json
+C:\xampp\htdocs\programme_oop\programme_fichiers\bin\Debug\netcoreapp3.1\programme_fichiers.dll
+C:\xampp\htdocs\programme_oop\programme_fichiers\bin\Debug\netcoreapp3.1\programme_fichiers.pdb
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.csproj.AssemblyReference.cache
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.AssemblyInfoInputs.cache
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.AssemblyInfo.cs
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.dll
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.pdb
+C:\xampp\htdocs\programme_oop\programme_fichiers\obj\Debug\netcoreapp3.1\programme_fichiers.genruntimeconfig.cache
