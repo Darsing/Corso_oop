@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -120,8 +122,18 @@ namespace projet_pizza1
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8; //pour lire le simbole €
+            var fileName = "pizzes.json";
 
-            //Pizza pizza = new Pizza("4 fromages", 9.50, false);
+            //var pizzes = GetPizzasFromCode();
+            var pizzes = GetPizzasFromFile(fileName);
+            foreach (Pizza pizza in pizzes)
+            {
+                pizza.Afficher();
+            }
+        }
+
+        static List<Pizza> GetPizzasFromCode()
+        {
             List<Pizza> pizzes = new List<Pizza>
             {
                 new Pizza("4 fromages", 11.50f, true, new List<string>()
@@ -136,54 +148,43 @@ namespace projet_pizza1
                 {"mozarella","sauce tomate", "oignon", "jambon"}),
                 new Pizza("complete", 9.50f, false, new List<string>()
                 {"mozarella","oeuf", "persil", "jambo"}),
-                new PizzaPersonnalisee(),
-                new PizzaPersonnalisee(),
-
-
+                //new PizzaPersonnalisee(),
+                //new PizzaPersonnalisee()
             };
+            return pizzes;
+        }
 
-            //classer par prix du plus petit au plus grand
-            //pizzes = pizzes.OrderBy(p =>p.prix).ToList();
-            //classer par prix du plus grand au plus petit
-            //pizzes = pizzes.OrderByDescending(p => p.prix).ToList();
-
-            /* comment afficher/trier la pizza moins chere et plus chere
-             sans utiliser le 'orderby' ,'sort' */
-            //Pizza pizzaPrixMin = null;
-            //Pizza pizzaPrixMax = null;
-
-            //pizzaPrixMin = pizzes[0];
-            //pizzaPrixMax = pizzes[0];
-
-            //foreach (Pizza piz in pizzes)
-            //{
-            //    if(piz.prix <pizzaPrixMin.prix)
-            //    {
-            //        pizzaPrixMin=piz;
-            //    }
-            //    if(piz.prix > pizzaPrixMax.prix)
-            //    {
-            //        pizzaPrixMax = piz;
-            //    }
-            //}
-
-            //pizzes = pizzes.Where(p => !p.vegetarienne).ToList();//pour afficher pizza qui ne sont pas V
-            //pizzes = pizzes.Where(p => p.vegetarienne).ToList();//pour afficher seulement les pizza V
-
-            //pizzes = pizzes.Where(p => p.ingredients.Contains("tomates")).ToList();
-            //pizzes = pizzes.Where(p => p.ingredients.Where(i=>i.ToLower().Contains("tomate")).ToList().Count>0).ToList();
-            //pizzes = pizzes.Where(p=>p.ContientIngredient("tomate")).ToList();  
-            foreach (Pizza pizza in pizzes)
+        static List<Pizza> GetPizzasFromFile(string fileName)
+        {
+            string json = null;
+            try
             {
-                pizza.Afficher();
+                json = File.ReadAllText(fileName);
+            }
+            catch
+            {
+                Console.WriteLine("Erreur de lecture du fichier" + fileName);
+                return null;
             }
 
-            //Console.WriteLine("La pizza la moins chere est : ");
-            //pizzaPrixMin.Afficher();
-            //Console.WriteLine("La pizza la plus chere est : ");
-            //pizzaPrixMax.Afficher();
+            List<Pizza> pizzes = null;
+            try
+            {
+                pizzes = JsonConvert.DeserializeObject<List<Pizza>>(json);
+            }
+            catch
+            {
+                Console.WriteLine("Erreur : les donnees json ne sont pas valide");
+                return null;
+            }
+            return pizzes;
+        }
 
-     
+        static void GenerateJsonFile(List<Pizza>pizzes, string fileName)
+        {
+            string json = JsonConvert.SerializeObject(pizzes);
+            //Console.WriteLine(json);
+            File.WriteAllText(fileName, json);
         }
     }
 }

@@ -1,0 +1,14 @@
+C:\xampp\htdocs\programme_oop\ripassoClasse\bin\Debug\netcoreapp3.1\ripassoClasse.exe
+C:\xampp\htdocs\programme_oop\ripassoClasse\bin\Debug\netcoreapp3.1\ripassoClasse.deps.json
+C:\xampp\htdocs\programme_oop\ripassoClasse\bin\Debug\netcoreapp3.1\ripassoClasse.runtimeconfig.json
+C:\xampp\htdocs\programme_oop\ripassoClasse\bin\Debug\netcoreapp3.1\ripassoClasse.runtimeconfig.dev.json
+C:\xampp\htdocs\programme_oop\ripassoClasse\bin\Debug\netcoreapp3.1\ripassoClasse.dll
+C:\xampp\htdocs\programme_oop\ripassoClasse\bin\Debug\netcoreapp3.1\ripassoClasse.pdb
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.csproj.AssemblyReference.cache
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.AssemblyInfoInputs.cache
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.AssemblyInfo.cs
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.dll
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.pdb
+C:\xampp\htdocs\programme_oop\ripassoClasse\obj\Debug\netcoreapp3.1\ripassoClasse.genruntimeconfig.cache
