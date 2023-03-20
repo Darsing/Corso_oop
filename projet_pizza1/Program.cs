@@ -124,8 +124,9 @@ namespace projet_pizza1
             Console.OutputEncoding = Encoding.UTF8; //pour lire le simbole €
             var fileName = "pizzes.json";
 
-            //var pizzes = GetPizzasFromCode();
-            var pizzes = GetPizzasFromFile(fileName);
+            var pizzes = GetPizzasFromCode();
+            //var pizzes = GetPizzasFromFile(fileName);
+            //GenerateJsonFile(pizzes, fileName);
             foreach (Pizza pizza in pizzes)
             {
                 pizza.Afficher();
